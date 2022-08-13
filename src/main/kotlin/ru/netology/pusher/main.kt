@@ -8,7 +8,6 @@ import com.google.firebase.messaging.Message
 import java.io.FileInputStream
 
 
-val token = "fQCRdk3rSEKuD-V_SuzdlM:APA91bG_yAWY3zoVhvZMH2evkA6COoj5BuXfd4X5TO5y9vmUwtwhXFPu2W5PY8MR3v1PfwWsZA5kPG6j0gzNsMA8AfzWqixU0tJRXYwX3Ix_b4xgtz4YDBKxl46LGrdFdjNVaIggkLhM"
 
 
 
@@ -18,6 +17,7 @@ fun main() {
         .build()
 
     FirebaseApp.initializeApp(options)
+    val token = "fQCRdk3rSEKuD-V_SuzdlM:APA91bG_yAWY3zoVhvZMH2evkA6COoj5BuXfd4X5TO5y9vmUwtwhXFPu2W5PY8MR3v1PfwWsZA5kPG6j0gzNsMA8AfzWqixU0tJRXYwX3Ix_b4xgtz4YDBKxl46LGrdFdjNVaIggkLhM"
 
     val message = Message.builder()
         .putData("action", "LIKE")
